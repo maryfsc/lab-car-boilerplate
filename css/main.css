@@ -1,1 +1,6 @@
-/* Los estilos de tu proyecto */
+body {
+  background-color: #F7B617;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
