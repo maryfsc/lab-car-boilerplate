@@ -1,6 +1,12 @@
 body {
   background-color: #F7B617;
-  margin: 0;
+  margin: 0px;
   font-family: 'Montserrat', sans-serif;
 }
 
+.taxi {
+	height: 700px;
+	object-fit: cover;
+	object-position: 50% 92%;
+	margin: 0px;
+}
