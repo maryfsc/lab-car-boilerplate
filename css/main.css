@@ -44,6 +44,15 @@ body {
   background: rgba(00, 00, 00, 0.6);
 }
 
+#start-point, #user-destination {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.map-box {
+  border: 1px solid white;
+}
+
 /*@media screen (max-width: 480px) {
   .bg-taxi {
     width: 50%;
