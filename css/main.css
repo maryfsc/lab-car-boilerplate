@@ -4,9 +4,24 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.taxi {
-	height: 700px;
-	object-fit: cover;
-	object-position: 50% 92%;
-	margin: 0px;
+.bg-yellow {
+  background-color: #F7B617;
+}
+
+/*.bg-taxi {
+  background-image: url("assets/image/taxi.jpg");
+  background-size: 100%;
+}	*/
+
+.taxi-box {
+  width:100%;
+  bottom: .3rem;
+  position: absolute;
+  left: 1%;
+}
+
+.taxi-img {
+  height: 33%;
+  object-fit: cover;
+  object-position: 50% 92%;
 }
