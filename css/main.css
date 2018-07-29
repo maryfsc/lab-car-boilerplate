@@ -1,6 +1,7 @@
 body {
   background-color: #F7B617;
   margin: 0px;
+  max-height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -8,20 +9,23 @@ body {
   background-color: #F7B617;
 }
 
-/*.bg-taxi {
-  background-image: url("assets/image/taxi.jpg");
-  background-size: 100%;
-}	*/
+.bg-taxi {
+  height: 700px;
+  width: 100%;
+  background-image: url(../assets/images/taxi.jpg);
+  background-size: cover;
+  background-position: 50% 92%;
+}	
 
 .taxi-box {
-  width:100%;
-  bottom: .3rem;
   position: absolute;
-  left: 1%;
+  top: 265px;
+  right: 14px;
+  font-size: 16px;
 }
 
-.taxi-img {
-  height: 33%;
-  object-fit: cover;
-  object-position: 50% 92%;
-}
+/*@media screen (max-width: 480px) {
+  .bg-taxi {
+    width: 50%;
+  }
+}*/
