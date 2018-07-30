@@ -20,7 +20,7 @@ body {
 .taxi-box {
   position: absolute;
   top: 265px;
-  right: 14px;
+  right: 15px;
   font-size: 16px;
 }
 
@@ -51,6 +51,24 @@ body {
 
 .map-box {
   border: 1px solid white;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid grey;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: grey;
 }
 
 /*@media screen (max-width: 480px) {
