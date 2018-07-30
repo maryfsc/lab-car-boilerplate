@@ -10,15 +10,15 @@ body {
 }
 
 .session-start-userpic {
-  position: relative;
-  left: 305px;
+/*  position: relative;
+  left: 305px;*/
 }
 
 .session-start-form {
   height: 200px;
   width: 300px;
-  position: relative;
-  left: 240px;
+/*  position: relative;
+  left: 240px;*/
   border-radius: 2px;
 }
 
@@ -78,7 +78,7 @@ body {
   border: 1px solid white;
 }
 
-hr {
+.hr-footer {
   width: 100%;
   border: 1px solid grey;
 }

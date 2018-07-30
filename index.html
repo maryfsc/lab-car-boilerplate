@@ -34,8 +34,8 @@
     <div class="modal fade bd-example-modal-lg" id="start-session" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header justify-content-center bg-info">
-            <div class="modal-title" id="exampleModalLabel"><img class="session-start-userpic" src="assets/images/new-user.png" height="200"></div>
+          <div class="modal-header bg-info">
+            <div class="modal-title"><img class="session-start-userpic" src="assets/images/new-user.png" height="200"></div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -61,8 +61,120 @@
                 </div>
               </div>
               <button type="button" class="btn btn-warning text-white font-weight-bold pb-2">LOG IN</button>
-              <small id="emailHelp" class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique aqui.</a></small>
+              <small id="passwordHelp" class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique aqui.</a></small>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="become-driver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-secondary">
+          <button type="button" class="close align-self-end p-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label font-weight-bold">Tem veículo de 4 portas?</label>
+                <select class="form-control" id="car-doors">
+                  <option>Sim</option>
+                  <option>Não</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label font-weight-bold">Marca:</label>
+                <select class="form-control" id="car-brand">
+                  <option>Escolha a marca de seu veículo</option>
+                  <option>Marca 1</option>
+                  <option>Marca 2</option>
+                  <option>Marca 3</option>
+                  <option>Marca 4</option>
+                  <option>Marca 5</option>
+                </select>
+                <small id="emailHelp" class="form-text text-black">Não achou seu veículo na lista? Envie um email para <a href="mailto:suporte@labcar.com">suporte@labcar.com</a></small>
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label font-weight-bold">Modelo:</label>
+                <select class="form-control" id="car-model">
+                  <option>Escolha o modelo de seu veículo</option>
+                  <option>Modelo X</option>
+                  <option>Modelo Y</option>
+                  <option>Modelo Z</option>
+                  <option>Modelo Q</option>
+                  <option>Modelo W</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label font-weight-bold">Ano:</label>
+                <select class="form-control" id="car-year">
+                  <option>Escolha o ano de seu veículo</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                  <option>2016</option>
+                  <option>2017</option>
+                  <option>2018</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label font-weight-bold">Número de registro:</label>
+                <input type="text" class="form-control" id="message-text"></input>
+                <small class="form-text text-black">O número de registro ajuda os clientes a encontrarem seu veículo.</small>
+              </div>                            
+            </form>
+            <button type="button" class="btn btn-primary w-100 font-weight-bold">ENVIAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-secondary">
+          <button type="button" class="close align-self-end p-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <button type="button" class="btn btn-dark w-100 font-weight-bold">Já tem uma conta?</button>
+            <h6 class="pt-3 pb-3">OU CRIE UMA CONTA NOVA</h6>            
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Nome">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Sobrenome">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email. exemplo@email.com"></input>
+              </div> 
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Telefone"></input>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Senha"></input>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Cidade"></input>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Código do convite (opcional)"></input>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Como ficou sabendo sobre nós?</option>
+                  <option>Pesquisa em Google, DuckDuckGO, Yahoo...</option>
+                  <option>Email</option>
+                  <option>Redes Sociais</option>
+                  <option>Indicação de amigos</option>
+                  <option>Publicidade</option>
+                  <option>Pombo-correio</option>
+                </select>
+              </div>                                          
+            </form>
+            <button type="button" class="btn btn-primary w-100 font-weight-bold">ENVIAR</button>
           </div>
         </div>
       </div>
@@ -74,9 +186,9 @@
             <h2 class="font-weight-bold mt-5 when-desktop">Aproveite a viagem</h2>
             <h2 class="font-weight-bold when-desktop">Você é dono de seu tempo</h2>
             <p class="font-weight-bold when-desktop">Viaje com  <img src="assets/images/logoBlanco.png" height="17"></p>
-            <button type="button" class="btn btn-light font-weight-bold when-desktop">CADASTRE-SE</button>
-            <p class="when-desktop">Ou então</p>
-            <button type="button" class="btn btn-light mb-5 when-desktop">Seja um motorista</button>
+            <button type="button" class="btn btn-light font-weight-bold when-desktop" data-toggle="modal" data-target="#register">CADASTRE-SE</button>
+            <p class="when-desktop">Ou</p>
+            <button type="button" class="btn btn-light mb-5 when-desktop" data-toggle="modal" data-target="#become-driver">Seja um motorista</button>
             <h2 class="when-mobile font-weight-bold">Comece a viajar com <img src="assets/images/logoBlanco.png" height="17"></h2>
             <button type="button" class="btn btn-light font-weight-bold when-mobile">Baixe o app</button>
           </div>
@@ -107,7 +219,7 @@
         <div class="col-lg-4 text-white p-5 driver-box">
           <h3 class="font-weight-bold mt-5">Dirija quando quiser</h3>
           <p>LabCar é uma opção flexível para alcançar suas metas financeiras.</p>
-          <button type="button" class="btn btn-warning text-white font-weight-bold">Seja um motorista</button> 
+          <button type="button" class="btn btn-warning text-white font-weight-bold" data-toggle="modal" data-target="#become-driver">Seja um motorista</button> 
         </div>      
       </div>    
     </div>
@@ -146,7 +258,7 @@
     <div>
       <img src="assets/images/logoBlanco.png" height="30">
     </div>
-    <hr>
+    <hr class="hr-footer">
     <div class="row align-items-end">
       <div class="col-lg-3 social">
         <i class="icon-facebook"></i>
@@ -186,7 +298,7 @@
           </ul>
         </div>
       </div>
-      <hr>
+      <hr class="hr-footer">
       <div>
         <p>&#169;2017 LabCar Technologies Inc.</p>
       </div>
