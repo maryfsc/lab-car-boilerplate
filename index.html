@@ -26,26 +26,63 @@
            <a class="nav-link" href="#">Conduza</a>
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="#">Iniciar sessão</a>
+           <a class="nav-link" href="#" data-toggle="modal" data-target="#start-session">Iniciar sessão</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-    <div class="row">
-      <div class="bg-taxi img-fluid"></div>
-    </div>
-    <div class="row justify-content-end w-100 taxi-box">
-      <div class="col-sm-5 text-white bg-yellow">
-        <h2 class="font-weight-bold mt-5">Aproveite a viagem</h2>
-        <h2 class="font-weight-bold">Você é dono de seu tempo</h2>
-        <p class="font-weight-bold">Viaje com  <img src="assets/images/logoBlanco.png" height="17"></p>
-        <button type="button" class="btn btn-light font-weight-bold">CADASTRE-SE</button>
-        <p>Ou então</p>
-        <button type="button" class="btn btn-light mb-5">Seja um motorista</button>
+    <div class="modal fade bd-example-modal-lg" id="start-session" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center bg-info">
+            <div class="modal-title" id="exampleModalLabel"><img class="session-start-userpic" src="assets/images/new-user.png" height="200"></div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-info">
+            <form class="bg-light p-3 session-start-form">
+              <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2">
+                  <label for="recipient-name" class="col-form-label"></label>
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="icon-user"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Username">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2 mr-sm-2">
+                  <label for="message-text" class="col-form-label"></label>
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="icon-lock"></i></div>
+                  </div>
+                  <input type="password" class="form-control" id="message-text" placeholder="Password"></input>
+                </div>
+              </div>
+              <button type="button" class="btn btn-warning text-white font-weight-bold pb-2">LOG IN</button>
+              <small id="emailHelp" class="form-text text-muted">Esqueceu sua senha? <a href="#">Clique aqui.</a></small>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="bg-taxi img-fluid">
+      <div class="container-fluid">
+        <div class="row justify-content-end">
+          <div class="col-sm-5 text-white taxi-box bg-yellow">
+            <h2 class="font-weight-bold mt-5 when-desktop">Aproveite a viagem</h2>
+            <h2 class="font-weight-bold when-desktop">Você é dono de seu tempo</h2>
+            <p class="font-weight-bold when-desktop">Viaje com  <img src="assets/images/logoBlanco.png" height="17"></p>
+            <button type="button" class="btn btn-light font-weight-bold when-desktop">CADASTRE-SE</button>
+            <p class="when-desktop">Ou então</p>
+            <button type="button" class="btn btn-light mb-5 when-desktop">Seja um motorista</button>
+            <h2 class="when-mobile font-weight-bold">Comece a viajar com <img src="assets/images/logoBlanco.png" height="17"></h2>
+            <button type="button" class="btn btn-light font-weight-bold when-mobile">Baixe o app</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="container-fluid">
     <div class="row justify-content-start mb-4 mt-4">
       <div class="col-lg-10">
