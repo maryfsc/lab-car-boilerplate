@@ -89,6 +89,12 @@ ul li a:hover {
     display: block;
   }
 
+  .footer-mobile {
+    display: flex;
+    flex-direction: row;
+    white-space: no-wrap;
+  }
+
   .when-desktop {
     display: none;
   }
