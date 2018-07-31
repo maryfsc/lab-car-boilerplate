@@ -15,10 +15,8 @@ body {
 }
 
 .session-start-form {
-  height: 200px;
-  width: 300px;
-/*  position: relative;
-  left: 240px;*/
+  height: 100%;
+  width: 60%;
   border-radius: 2px;
 }
 
@@ -39,16 +37,6 @@ body {
 .when-mobile {
   display: none;
 }
-
-/*@media screen (max-width: 480px) {
-  .when-mobile {
-    display: block;
-  }
-
-  .when-desktop {
-    display: none;
-  }
-}*/
 
 .phone-box {
   border: 1px solid white;
@@ -95,3 +83,17 @@ ul li a:hover {
   text-decoration: none;
   color: grey;
 }
+
+/*@media screen (max-width: 576px) {
+  .when-mobile {
+    display: block;
+  }
+
+  .when-desktop {
+    display: none;
+  }
+
+  .session-start-form {
+    width: 100%;
+  }
+}*/
