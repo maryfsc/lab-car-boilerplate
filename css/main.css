@@ -84,7 +84,7 @@ ul li a:hover {
   color: grey;
 }
 
-/*@media screen (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .when-mobile {
     display: block;
   }
@@ -93,7 +93,13 @@ ul li a:hover {
     display: none;
   }
 
+  .taxi-box {
+    width: 80%;
+    height: 100%;
+    padding: 40px;
+  }
+
   .session-start-form {
     width: 100%;
   }
-}*/
+}
